@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nandhini Chandran | AI & Data Science</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f8;--panel:#fff;--ink:#17203a;--mute:#566079;--line:#d8dfe9;--blue:#2b50d8;--gold:#f5b700;--onblue:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10162b;--panel:#182040;--ink:#eef1fa;--mute:#a5aec8;--line:#2a3560;--blue:#7d97ff;--gold:#f5b700;--onblue:#10162b}}
+:root[data-theme="dark"]{--bg:#10162b;--panel:#182040;--ink:#eef1fa;--mute:#a5aec8;--line:#2a3560;--blue:#7d97ff;--gold:#f5b700;--onblue:#10162b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap;padding:1.25rem 0;font-weight:500}
+nav a{color:var(--mute);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{padding:3rem 0 4rem}
+.hero h1{font-size:clamp(2.8rem,9vw,6rem);font-weight:800;letter-spacing:-.03em}
+.hero p.lead{font-size:1.3rem;max-width:36rem;color:var(--mute);margin:1.25rem 0 1.75rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:.5rem;font-weight:600;text-decoration:none;border:2px solid var(--blue)}
+.btn.main{background:var(--blue);color:var(--onblue)}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1.5rem;letter-spacing:-.02em}
+ul.pts{padding-left:1.2rem;margin:.75rem 0}
+ul.pts li{margin:.35rem 0;max-width:46rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:1.25rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:.5rem;padding:1.4rem}
+.card h3{font-size:1.35rem;margin-bottom:.4rem}
+.meta{color:var(--mute);font-size:.95rem;margin:0 0 .5rem}
+.skills dt{font-weight:600;margin-top:.9rem}
+.skills dd{margin:0;color:var(--mute)}
+footer{padding:3rem 0 4rem;border-top:1px solid var(--line)}
+.links{display:flex;gap:1.25rem;flex-wrap:wrap;font-weight:600}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<h1>Nandhini Chandran</h1>
+<p class="lead">B.Tech student in AI &amp; Data Science. I clean data, find the pattern in it, and build tools that help people act on what they find.</p>
+<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+</header>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<article class="card"><h3>RaiseIt: Multilingual Grievance Redressal System</h3><p class="meta">Team project (3 members) · Python, Whisper, FastAPI, Git &amp; GitHub</p>
+<p>People often can't file a complaint because the portal isn't in their language. RaiseIt lets them speak it in their own language, turns it into English text, classifies it and routes it to the right department.</p>
+<p style="margin-bottom:0"><strong>My part: the voice and language layer.</strong></p>
+<ul class="pts"><li>Built the speech-to-text and translation pipeline with OpenAI Whisper.</li><li>Found Whisper's translate task inaccurate on a Telugu test sentence, so split it into two steps: transcribe, then translate.</li><li>Tuned decoding settings and compared results with the original transcription.</li><li>Connected the pipeline to the team's classifier API and added a browser-based complaint recorder.</li><li>Merged the voice module into the team repository through a pull request.</li></ul></article>
+<article class="card"><h3>Iris Flower Classification</h3><p class="meta">Python, Pandas, NumPy, Matplotlib</p>
+<ul class="pts"><li>Classified iris species from their physical measurements.</li><li>Cleaned the data and prepared features with Pandas and NumPy.</li><li>Plotted feature distributions to see how species differ.</li><li>Refined feature selection over several rounds to make results more reliable.</li></ul></article>
+<article class="card"><h3>Sales Prediction Analysis</h3><p class="meta">Python, Pandas, NumPy, Matplotlib</p>
+<ul class="pts"><li>Cleaned historical sales data: missing values and formatting issues.</li><li>Explored trends, seasonal patterns and what drives sales.</li><li>Built charts that explain the insights clearly.</li><li>Estimated future sales trends from past patterns.</li></ul></article>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<article class="card"><h3>Data Science Intern, CodeAlpha</h3>
+<ul class="pts"><li>Cleaned and preprocessed real-world datasets in Python and Pandas, fixing missing values and inconsistencies.</li><li>Ran exploratory data analysis and built Matplotlib visualizations to surface trends.</li><li>Designed and evaluated machine learning solutions in Python, using statistics to improve accuracy.</li></ul></article>
+</section>
+
+<section id="skills">
+<h2>Skills, education and certificates</h2>
+<div class="grid">
+<dl class="card skills" style="margin:0"><dt>Languages</dt><dd>Java, Python</dd><dt>Data libraries</dt><dd>Pandas, NumPy, Matplotlib</dd><dt>Web</dt><dd>HTML, CSS</dd><dt>Tools</dt><dd>GitHub, VS Code, Jupyter Notebook, Google Colab</dd><dt>Learning now</dt><dd>Data structures and algorithms in Java</dd></dl>
+<div class="card"><h3>Education</h3><p><strong>B.Tech, Artificial Intelligence &amp; Data Science</strong><br>VSB College of Engineering Technical Campus<br><span class="meta">CGPA 8.7 · Graduating 2028</span></p><p style="margin-bottom:0"><strong>GKN Higher Secondary School</strong><br><span class="meta">HSC 86.5% · SSLC 84.2%</span></p></div>
+<div class="card"><h3>Certifications</h3><ul class="pts"><li>NPTEL: Fundamentals of Digital Marketing</li><li>Infosys Springboard: Python Foundation</li><li>CodeAlpha: Data Science Internship</li></ul></div>
+</div>
+</section>
+
+<footer id="contact">
+<h2>Let's talk</h2>
+<p>Open to internships and software or data roles.</p>
+<div class="links"><a href="mailto:nandhinichandran74@gmail.com">nandhinichandran74@gmail.com</a><a href="https://github.com/Nandhini-C-N">GitHub</a><a href="https://www.linkedin.com/in/nandhini-chandran19">LinkedIn</a><a href="https://leetcode.com/u/Nandhinichandran/">LeetCode</a></div>
+</footer>
+</div>
+</body>
+</html>
